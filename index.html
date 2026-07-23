@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#fbfaf7">
+    <meta name="description" content="Al Naser family application proposal, published work, and pricing by Abdullah Alamzyad.">
+    <title>Al Naser Family App Proposal — Abdullah Alamzyad</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-lang="en">
+    <svg class="icon-sprite" aria-hidden="true">
+        <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/><path d="M9 12h10"/></symbol>
+        <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/><path d="M5 12h10"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+        <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+        <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></symbol>
+        <symbol id="i-expand" viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></symbol>
+        <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-8 8"/><path d="M17 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h5"/></symbol>
+        <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+        <symbol id="i-language" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></symbol>
+        <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+        <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M16 5a3 3 0 0 1 0 6M18 20v-2a5 5 0 0 0-3-4.6"/></symbol>
+        <symbol id="i-tree" viewBox="0 0 24 24"><circle cx="12" cy="4" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path d="M12 6v5M6 16v-3h12v3"/></symbol>
+        <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H5l-3 2 1-5a9 9 0 1 1 18-5Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></symbol>
+        <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+        <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></symbol>
+        <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a2 2 0 0 0 .4 2.2l.1.1-2.6 2.6-.1-.1a2 2 0 0 0-2.2-.4 2 2 0 0 0-1.2 1.8V21h-3.6v-.2A2 2 0 0 0 9 19a2 2 0 0 0-2.2.4l-.1.1-2.6-2.6.1-.1A2 2 0 0 0 4.6 15a2 2 0 0 0-1.8-1.2H3v-3.6h.2A2 2 0 0 0 5 9a2 2 0 0 0-.4-2.2l-.1-.1 2.6-2.6.1.1A2 2 0 0 0 9 4.6a2 2 0 0 0 1.2-1.8V3h3.6v.2A2 2 0 0 0 15 5a2 2 0 0 0 2.2-.4l.1-.1 2.6 2.6-.1.1A2 2 0 0 0 19.4 9a2 2 0 0 0 1.8 1.2h.2v3.6h-.2A2 2 0 0 0 19.4 15Z"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+        <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01M11 7h7M11 17h7"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+        <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 15-5-5L5 20"/></symbol>
+        <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15M15 6v15"/></symbol>
+        <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M14 5c3-3 6-2 6-2s1 3-2 6l-5 5-4-4 5-5Z"/><path d="m9 10-4 1-2 2 6 2M13 14l-1 4-2 2-2-6M15 5l4 4"/><path d="M5 19c-1 1-3 1-3 1s0-2 1-3 3-1 3-1 0 2-1 3Z"/></symbol>
+        <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2"/><rect x="7" y="14" width="10" height="7"/></symbol>
+        <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 1.4 4.6L18 9l-4.6 1.4L12 15l-1.4-4.6L6 9l4.6-1.4L12 3ZM19 15l.7 2.3L22 18l-2.3.7L19 21l-.7-2.3L16 18l2.3-.7L19 15Z"/></symbol>
+    </svg>
+
+    <div class="deck" id="deck">
+        <header class="deck-topbar">
+            <button class="brand-button" type="button" data-go="0" aria-label="Go to first slide">
+                <span class="brand-mark">AA</span>
+                <span class="brand-copy">
+                    <strong class="lang lang-en">Abdullah Alamzyad</strong>
+                    <strong class="lang lang-ar" lang="ar">عبدالله المزيد</strong>
+                    <small class="lang lang-en">Al Naser Family App</small>
+                    <small class="lang lang-ar" lang="ar">تطبيق الناصر العائلي</small>
+                </span>
+            </button>
+
+            <div class="section-indicator" aria-live="polite">
+                <span class="section-dot"></span>
+                <span id="currentSection">Introduction</span>
+            </div>
+
+            <div class="toolbar">
+                <button class="icon-button" type="button" id="contentsButton" aria-label="Open slide contents" title="Contents">
+                    <svg><use href="#i-grid"></use></svg>
+                </button>
+                <button class="text-button" type="button" id="languageButton" aria-label="Switch language">
+                    <svg><use href="#i-language"></use></svg>
+                    <span id="languageLabel">العربية</span>
+                </button>
+                <button class="icon-button hide-small" type="button" id="printButton" aria-label="Print or save as PDF" title="Print / PDF">
+                    <svg><use href="#i-print"></use></svg>
+                </button>
+                <button class="icon-button" type="button" id="fullscreenButton" aria-label="Enter fullscreen" title="Fullscreen">
+                    <svg><use href="#i-expand"></use></svg>
+                </button>
+            </div>
+        </header>
+
+        <main class="slides" id="slides">
+            <section class="slide slide-cover is-active" data-section-en="Introduction" data-section-ar="المقدمة" aria-label="Cover slide">
+                <div class="slide-grid cover-layout">
+                    <div class="cover-copy">
+                        <p class="eyebrow">
+                            <span class="eyebrow-line"></span>
+                            <span class="lang lang-en">Proposal · Selected work · Pricing</span>
+                            <span class="lang lang-ar" lang="ar">المقترح · نماذج الأعمال · الأسعار</span>
+                        </p>
+                        <h1>
+                            <span class="lang lang-en">A private digital home<br>for Al Naser.</span>
+                            <span class="lang lang-ar" lang="ar">بيت رقمي خاص<br>لعائلة الناصر.</span>
+                        </h1>
+                        <p class="lead">
+                            <span class="lang lang-en">A clear proposal for a secure Al Naser family application—designed to connect generations, organize family life, and preserve what matters.</span>
+                            <span class="lang lang-ar" lang="ar">مقترح واضح لتطبيق عائلة الناصر، صُمم لربط الأجيال وتنظيم حياة العائلة وحفظ ما يهمها.</span>
+                        </p>
+                        <div class="author-line">
+                            <span class="author-avatar">AA</span>
+                            <span>
+                                <small class="lang lang-en">Prepared and delivered by</small>
+                                <small class="lang lang-ar" lang="ar">إعداد وتنفيذ</small>
+                                <strong class="lang lang-en">Abdullah Alamzyad</strong>
+                                <strong class="lang lang-ar" lang="ar">عبدالله المزيد</strong>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="cover-visual" aria-hidden="true">
+                        <div class="orbit orbit-one"></div>
+                        <div class="orbit orbit-two"></div>
+                        <div class="family-map">
+                            <span class="map-node root"></span>
+                            <span class="map-line trunk"></span>
+                            <span class="map-line branch-left"></span>
+                            <span class="map-line branch-right"></span>
+                            <span class="map-node node-left"></span>
+                            <span class="map-node node-right"></span>
+                            <span class="map-line leaf-left-a"></span>
+                            <span class="map-line leaf-left-b"></span>
+                            <span class="map-line leaf-right-a"></span>
+                            <span class="map-line leaf-right-b"></span>
+                            <span class="map-node leaf-node-1"></span>
+                            <span class="map-node leaf-node-2"></span>
+                            <span class="map-node leaf-node-3"></span>
+                            <span class="map-node leaf-node-4"></span>
+                        </div>
+                        <div class="visual-card visual-card-back"></div>
+                        <div class="visual-card visual-card-mid"></div>
+                        <div class="visual-card visual-card-main">
+                            <span class="visual-glow"></span>
+                            <svg><use href="#i-users"></use></svg>
+                            <span class="visual-rule"></span>
+                            <span class="visual-copy-line"></span>
+                            <span class="visual-copy-line short"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide" data-section-en="The opportunity" data-section-ar="الفرصة" aria-label="The opportunity">
+                <div class="slide-heading">
+                    <p class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span class="lang lang-en">01 · The opportunity</span>
+                        <span class="lang lang-ar" lang="ar">01 · الفرصة</span>
+                    </p>
+                    <h2>
+                        <span class="lang lang-en">Bring family life into one trusted place.</span>
+                        <span class="lang lang-ar" lang="ar">اجمعوا حياة العائلة في مكان واحد موثوق.</span>
+                    </h2>
+                    <p>
+                        <span class="lang lang-en">Instead of scattered groups, files, and messages, the application becomes Al Naser’s private family reference point.</span>
+                        <span class="lang lang-ar" lang="ar">بدلاً من تشتت المجموعات والملفات والرسائل، يصبح التطبيق المرجع الخاص والموحّد لعائلة الناصر.</span>
+                    </p>
+                </div>
+
+                <div class="opportunity-grid">
+                    <article class="statement-card statement-card-featured">
+                        <span class="card-index">01</span>
+                        <div class="statement-icon"><svg><use href="#i-tree"></use></svg></div>
+                        <h3>
+                            <span class="lang lang-en">Know who is who</span>
+                            <span class="lang lang-ar" lang="ar">تعرّفوا على أفراد العائلة</span>
+                        </h3>
+                        <p>
+                            <span class="lang lang-en">A clear member directory and family tree help every generation understand how people are connected.</span>
+                            <span class="lang lang-ar" lang="ar">دليل واضح وشجرة عائلة تساعد كل جيل على فهم صلات القرابة بين الأفراد.</span>
+                        </p>
+                    </article>
+                    <article class="statement-card">
+                        <span class="card-index">02</span>
+                        <div class="statement-icon"><svg><use href="#i-message"></use></svg></div>
+                        <h3>
+                            <span class="lang lang-en">Stay informed</span>
+                            <span class="lang lang-ar" lang="ar">ابقوا على اطلاع</span>
+                        </h3>
+                        <p>
+                            <span class="lang lang-en">Important news, announcements, invitations, and reminders reach the right family members.</span>
+                            <span class="lang lang-ar" lang="ar">تصل الأخبار والإعلانات والدعوات والتذكيرات المهمة إلى أفراد العائلة المعنيين.</span>
+                        </p>
+                    </article>
+                    <article class="statement-card">
+                        <span class="card-index">03</span>
+                        <div class="statement-icon"><svg><use href="#i-image"></use></svg></div>
+                        <h3>
+                            <span class="lang lang-en">Preserve moments</span>
+                            <span class="lang lang-ar" lang="ar">احفظوا الذكريات</span>
+                        </h3>
+                        <p>
+                            <span class="lang lang-en">Family stories, photographs, and milestones stay organized and accessible over time.</span>
+                            <span class="lang lang-ar" lang="ar">تبقى قصص العائلة وصورها ومحطاتها المهمة مرتبة ومتاحة مع مرور الوقت.</span>
+                        </p>
+                    </article>
+                    <article class="statement-card">
+                        <span class="card-index">04</span>
+                        <div class="statement-icon"><svg><use href="#i-shield"></use></svg></div>
+                        <h3>
+                            <span class="lang lang-en">Keep it private</span>
+                            <span class="lang lang-ar" lang="ar">حافظوا على الخصوصية</span>
+                        </h3>
+                        <p>
+                            <span class="lang lang-en">Access is limited to approved family members, with clear control over who can view or manage content.</span>
+                            <span class="lang lang-ar" lang="ar">يقتصر الدخول على الأفراد المعتمدين، مع تحكم واضح في صلاحيات العرض والإدارة.</span>
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="slide" data-section-en="Member experience" data-section-ar="تجربة أفراد العائلة" aria-label="Member experience">
+                <div class="slide-heading compact-heading">
+                    <p class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span class="lang lang-en">02 · Member experience</span>
+                        <span class="lang lang-ar" lang="ar">02 · تجربة أفراد العائلة</span>
+                    </p>
+                    <h2>
+                        <span class="lang lang-en">Everything members need—without the complexity.</span>
+                        <span class="lang lang-ar" lang="ar">كل ما يحتاجه أفراد العائلة—بلا تعقيد.</span>
+                    </h2>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon"><svg><use href="#i-lock"></use></svg></div>
+                        <div>
+                            <h3><span class="lang lang-en">Private accounts</span><span class="lang lang-ar" lang="ar">حسابات خاصة</span></h3>
+                            <p><span class="lang lang-en">Simple sign-in, profile updates, password recovery, and approval before access.</span><span class="lang lang-ar" lang="ar">دخول سهل وتحديث للملف واستعادة كلمة المرور واعتماد العضوية قبل السماح بالدخول.</span></p>
+                        </div>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon"><svg><use href="#i-tree"></use></svg></div>
+                        <div>
+                            <h3><span class="lang lang-en">Family tree &amp; directory</span><span class="lang lang-ar" lang="ar">شجرة العائلة والدليل</span></h3>
+                            <p><span class="lang lang-en">Browse relatives, search by name, and understand family connections at a glance.</span><span class="lang lang-ar" lang="ar">تصفح الأقارب والبحث بالاسم وفهم صلات القرابة بسهولة.</span></p>
+                        </div>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon"><svg><use href="#i-message"></use></svg></div>
+                        <div>
+                            <h3><span class="lang lang-en">News &amp; conversations</span><span class="lang lang-ar" lang="ar">الأخبار والتفاعل</span></h3>
+                            <p><span class="lang lang-en">Share announcements, updates, photographs, likes, and comments in a private feed.</span><span class="lang lang-ar" lang="ar">مشاركة الإعلانات والمستجدات والصور والتفاعل معها بالإعجاب والتعليقات.</span></p>
+                        </div>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon"><svg><use href="#i-calendar"></use></svg></div>
+                        <div>
+                            <h3><span class="lang lang-en">Events &amp; attendance</span><span class="lang lang-ar" lang="ar">المناسبات والحضور</span></h3>
+                            <p><span class="lang lang-en">See upcoming occasions, confirm attendance, open the map, and add dates to the calendar.</span><span class="lang lang-ar" lang="ar">متابعة المناسبات وتأكيد الحضور وفتح الموقع وإضافة الموعد إلى التقويم.</span></p>
+                        </div>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon"><svg><use href="#i-bell"></use></svg></div>
+                        <div>
+                            <h3><span class="lang lang-en">Useful notifications</span><span class="lang lang-ar" lang="ar">تنبيهات مفيدة</span></h3>
+                            <p><span class="lang lang-en">Receive timely alerts for important news, event changes, and family reminders.</span><span class="lang lang-ar" lang="ar">استلام تنبيهات في وقتها للأخبار المهمة وتغييرات المناسبات والتذكيرات العائلية.</span></p>
+                        </div>
+                    </article>
+                    <article class="feature-card feature-card-accent">
+                        <div class="feature-icon"><svg><use href="#i-language"></use></svg></div>
+                        <div>
+                            <h3><span class="lang lang-en">Arabic &amp; English</span><span class="lang lang-ar" lang="ar">العربية والإنجليزية</span></h3>
+                            <p><span class="lang lang-en">A comfortable bilingual interface with proper right-to-left support.</span><span class="lang lang-ar" lang="ar">واجهة مريحة باللغتين مع دعم صحيح للعرض من اليمين إلى اليسار.</span></p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="slide" data-section-en="Family administration" data-section-ar="إدارة العائلة" aria-label="Family administration">
+                <div class="slide-grid admin-layout">
+                    <div class="admin-copy">
+                        <p class="eyebrow">
+                            <span class="eyebrow-line"></span>
+                            <span class="lang lang-en">03 · Family administration</span>
+                            <span class="lang lang-ar" lang="ar">03 · إدارة العائلة</span>
+                        </p>
+                        <h2>
+                            <span class="lang lang-en">Simple for members.<br>Controlled by the family.</span>
+                            <span class="lang lang-ar" lang="ar">سهل للأفراد.<br>وتحت إدارة العائلة.</span>
+                        </h2>
+                        <p class="lead">
+                            <span class="lang lang-en">Approved administrators receive a secure, straightforward control panel—no technical training required.</span>
+                            <span class="lang lang-ar" lang="ar">يحصل المشرفون المعتمدون على لوحة آمنة وواضحة، ولا يحتاج استخدامها إلى خبرة تقنية.</span>
+                        </p>
+                        <div class="communication-note">
+                            <div class="communication-icons">
+                                <span><svg><use href="#i-mail"></use></svg></span>
+                                <span><svg><use href="#i-message"></use></svg></span>
+                            </div>
+                            <div>
+                                <strong><span class="lang lang-en">Email &amp; SMS connections</span><span class="lang lang-ar" lang="ar">الربط بالبريد والرسائل النصية</span></strong>
+                                <p><span class="lang lang-en">Useful for account confirmation and important notices. Usage fees are paid directly by the client.</span><span class="lang lang-ar" lang="ar">تُستخدم لتأكيد الحسابات والتنبيهات المهمة، وتُدفع رسوم الاستهلاك مباشرة من العميل.</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="admin-panel-mock" aria-label="Administration capabilities">
+                        <div class="mock-sidebar">
+                            <span class="mock-logo">AA</span>
+                            <span class="mock-nav is-on"><svg><use href="#i-users"></use></svg></span>
+                            <span class="mock-nav"><svg><use href="#i-tree"></use></svg></span>
+                            <span class="mock-nav"><svg><use href="#i-message"></use></svg></span>
+                            <span class="mock-nav"><svg><use href="#i-calendar"></use></svg></span>
+                            <span class="mock-nav"><svg><use href="#i-settings"></use></svg></span>
+                        </div>
+                        <div class="mock-content">
+                            <div class="mock-head">
+                                <div>
+                                    <small><span class="lang lang-en">Family administration</span><span class="lang lang-ar" lang="ar">إدارة العائلة</span></small>
+                                    <strong><span class="lang lang-en">Clear controls, one place</span><span class="lang lang-ar" lang="ar">تحكم واضح في مكان واحد</span></strong>
+                                </div>
+                                <span class="mock-status"><span class="status-dot"></span><span class="lang lang-en">Private</span><span class="lang lang-ar" lang="ar">خاص</span></span>
+                            </div>
+                            <div class="admin-action-grid">
+                                <article><span>01</span><svg><use href="#i-users"></use></svg><strong><span class="lang lang-en">Approve and manage members</span><span class="lang lang-ar" lang="ar">اعتماد الأعضاء وإدارتهم</span></strong></article>
+                                <article><span>02</span><svg><use href="#i-tree"></use></svg><strong><span class="lang lang-en">Update family information</span><span class="lang lang-ar" lang="ar">تحديث بيانات العائلة</span></strong></article>
+                                <article><span>03</span><svg><use href="#i-message"></use></svg><strong><span class="lang lang-en">Publish news and memories</span><span class="lang lang-ar" lang="ar">نشر الأخبار والذكريات</span></strong></article>
+                                <article><span>04</span><svg><use href="#i-calendar"></use></svg><strong><span class="lang lang-en">Create events and invitations</span><span class="lang lang-ar" lang="ar">إنشاء المناسبات والدعوات</span></strong></article>
+                                <article><span>05</span><svg><use href="#i-bell"></use></svg><strong><span class="lang lang-en">Send important notifications</span><span class="lang lang-ar" lang="ar">إرسال التنبيهات المهمة</span></strong></article>
+                                <article><span>06</span><svg><use href="#i-settings"></use></svg><strong><span class="lang lang-en">Control content and settings</span><span class="lang lang-ar" lang="ar">التحكم بالمحتوى والإعدادات</span></strong></article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide slide-case" data-section-en="Selected family product" data-section-ar="نموذج عائلي مختار" aria-label="Selected family application work">
+                <div class="slide-grid case-layout">
+                    <div class="case-copy">
+                        <p class="eyebrow">
+                            <span class="eyebrow-line"></span>
+                            <span class="lang lang-en">04 · Selected product work</span>
+                            <span class="lang lang-ar" lang="ar">04 · نموذج من الأعمال</span>
+                        </p>
+                        <p class="case-tag">
+                            <span class="tag-dot"></span>
+                            <span class="lang lang-en">Private family-app prototype · Native iOS</span>
+                            <span class="lang lang-ar" lang="ar">نموذج خاص لتطبيق عائلي · تطبيق آيفون أصلي</span>
+                        </p>
+                        <h2>
+                            <span class="lang lang-en">A working example of the family experience.</span>
+                            <span class="lang lang-ar" lang="ar">نموذج عملي لتجربة التطبيق العائلي.</span>
+                        </h2>
+                        <p class="lead">
+                            <span class="lang lang-en">This prototype demonstrates how a private family application can feel welcoming, organized, and useful from the first screen.</span>
+                            <span class="lang lang-ar" lang="ar">يوضح هذا النموذج كيف يمكن لتطبيق العائلة الخاص أن يكون مرحّباً ومنظماً ومفيداً منذ الشاشة الأولى.</span>
+                        </p>
+                        <ul class="case-points">
+                            <li><svg><use href="#i-check"></use></svg><span class="lang lang-en">Arabic-first, private member experience</span><span class="lang lang-ar" lang="ar">تجربة عربية خاصة لأفراد العائلة</span></li>
+                            <li><svg><use href="#i-check"></use></svg><span class="lang lang-en">Family tree, directory, feed, and events</span><span class="lang lang-ar" lang="ar">شجرة ودليل وأخبار ومناسبات العائلة</span></li>
+                            <li><svg><use href="#i-check"></use></svg><span class="lang lang-en">Built as a native iPhone application</span><span class="lang lang-ar" lang="ar">مبني كتطبيق أصلي للآيفون</span></li>
+                        </ul>
+                        <div class="case-meta">
+                            <span><svg><use href="#i-phone"></use></svg><span>iOS 17+</span></span>
+                            <span><svg><use href="#i-code"></use></svg><span>SwiftUI</span></span>
+                            <span><svg><use href="#i-language"></use></svg><span>RTL Arabic</span></span>
+                        </div>
+                    </div>
+
+                    <div class="case-showcase">
+                        <div class="case-backdrop"></div>
+                        <figure class="phone-figure">
+                            <div class="phone-shell">
+                                <div class="phone-island"></div>
+                                <img id="familyAppScreenshot" src="assets/family-app-home.png" alt="Private family application prototype home screen">
+                                <div class="screenshot-placeholder" aria-hidden="true">
+                                    <div class="placeholder-top">
+                                        <span class="placeholder-avatar">ن</span>
+                                        <span><small>مرحباً</small><strong>ناصر بن سالم</strong></span>
+                                    </div>
+                                    <div class="placeholder-event">
+                                        <small>المناسبة القادمة</small>
+                                        <strong>لقاء العائلة الشهري</strong>
+                                        <span>الجمعة · 8:00 مساءً</span>
+                                    </div>
+                                    <div class="placeholder-actions">
+                                        <span><svg><use href="#i-calendar"></use></svg><small>المناسبات</small></span>
+                                        <span><svg><use href="#i-tree"></use></svg><small>شجرة العائلة</small></span>
+                                        <span><svg><use href="#i-users"></use></svg><small>دليل الأفراد</small></span>
+                                        <span><svg><use href="#i-message"></use></svg><small>المجلس</small></span>
+                                    </div>
+                                    <div class="placeholder-feed">
+                                        <span class="placeholder-feed-head"></span>
+                                        <span class="placeholder-feed-line"></span>
+                                        <span class="placeholder-feed-line short"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <span class="lang lang-en">Working prototype · Demonstration data</span>
+                                <span class="lang lang-ar" lang="ar">نموذج عامل · بيانات تجريبية</span>
+                            </figcaption>
+                        </figure>
+                        <div class="floating-proof proof-one"><svg><use href="#i-tree"></use></svg><span class="lang lang-en">Family tree</span><span class="lang lang-ar" lang="ar">شجرة العائلة</span></div>
+                        <div class="floating-proof proof-two"><svg><use href="#i-calendar"></use></svg><span class="lang lang-en">Events</span><span class="lang lang-ar" lang="ar">المناسبات</span></div>
+                        <div class="floating-proof proof-three"><svg><use href="#i-shield"></use></svg><span class="lang lang-en">Private access</span><span class="lang lang-ar" lang="ar">دخول خاص</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide" data-section-en="Published apps" data-section-ar="التطبيقات المنشورة" aria-label="Published applications">
+                <div class="slide-heading compact-heading portfolio-heading">
+                    <div>
+                        <p class="eyebrow">
+                            <span class="eyebrow-line"></span>
+                            <span class="lang lang-en">05 · Published portfolio</span>
+                            <span class="lang lang-ar" lang="ar">05 · التطبيقات المنشورة</span>
+                        </p>
+                        <h2><span class="lang lang-en">Three products, live on the App Store.</span><span class="lang lang-ar" lang="ar">ثلاثة منتجات منشورة على App Store.</span></h2>
+                    </div>
+                    <p><span class="lang lang-en">Designed, built, and published by Abdullah Alamzyad in Arabic and English.</span><span class="lang lang-ar" lang="ar">صممها وطوّرها ونشرها عبدالله المزيد باللغتين العربية والإنجليزية.</span></p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <article class="project-card project-athkari">
+                        <div class="project-media"><img src="assets/athkari-appstore.jpg" alt="Athkari app icon"></div>
+                        <div class="project-content">
+                            <span class="project-type"><span class="lang lang-en">Reference · Arabic &amp; English</span><span class="lang lang-ar" lang="ar">مرجع · العربية والإنجليزية</span></span>
+                            <h3><span class="lang lang-en">Athkari</span><span class="lang lang-ar" lang="ar">أذكاري</span></h3>
+                            <p><span class="lang lang-en">A private daily Islamic companion for adhkar, prayer times, Qibla, and tasbeeh—designed to work without an account.</span><span class="lang lang-ar" lang="ar">رفيق إسلامي يومي وخاص يجمع الأذكار ومواقيت الصلاة والقبلة والتسبيح، دون الحاجة إلى إنشاء حساب.</span></p>
+                            <a class="store-link" href="https://apps.apple.com/sa/app/athkari-duaa-prayer-qibla/id6759393349" target="_blank" rel="noreferrer">
+                                <span class="lang lang-en">View on the App Store</span><span class="lang lang-ar" lang="ar">عرض في App Store</span><svg><use href="#i-external"></use></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-qeid">
+                        <div class="project-media"><img src="assets/qeidplus-appstore.jpg" alt="Qeid Plus app icon"></div>
+                        <div class="project-content">
+                            <span class="project-type"><span class="lang lang-en">Games · Arabic &amp; English</span><span class="lang lang-ar" lang="ar">ألعاب · العربية والإنجليزية</span></span>
+                            <h3><span class="lang lang-en">Qeid+ · Baloot Scorekeeper</span><span class="lang lang-ar" lang="ar">قيد + · حاسبة بلوت</span></h3>
+                            <p><span class="lang lang-en">A fast Baloot scorekeeper with Sun and Hokom scoring, match history, undo, team drawing, and shareable game summaries.</span><span class="lang lang-ar" lang="ar">حاسبة سريعة لنقاط البلوت تشمل الصن والحكم، وسجل اللعب، والتراجع، وقرعة الفرق، ومشاركة ملخص المباراة.</span></p>
+                            <a class="store-link" href="https://apps.apple.com/sa/app/%D9%82%D9%8A%D8%AF-%D8%A3%D9%81%D8%B6%D9%84-%D8%AD%D8%A7%D8%B3%D8%A8%D8%A9-%D8%A8%D9%84%D9%88%D8%AA/id6759509105" target="_blank" rel="noreferrer">
+                                <span class="lang lang-en">View on the App Store</span><span class="lang lang-ar" lang="ar">عرض في App Store</span><svg><use href="#i-external"></use></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-joinin">
+                        <div class="project-media"><img src="assets/joinin-appstore.jpg" alt="JoinIn Sports app icon"></div>
+                        <div class="project-content">
+                            <span class="project-type"><span class="lang lang-en">Sports · Arabic &amp; English</span><span class="lang lang-ar" lang="ar">رياضة · العربية والإنجليزية</span></span>
+                            <h3>JoinIn Sports</h3>
+                            <p><span class="lang lang-en">A simple way to organize football and padel matches, invite players, manage approvals, repeat events, and recognize standout players.</span><span class="lang lang-ar" lang="ar">طريقة سهلة لتنظيم مباريات كرة القدم والبادل، ودعوة اللاعبين، واعتماد المشاركين، وتكرار المباريات، وتكريم اللاعبين المميزين.</span></p>
+                            <a class="store-link" href="https://apps.apple.com/sa/app/joinin-sports/id6780363859" target="_blank" rel="noreferrer">
+                                <span class="lang lang-en">View on the App Store</span><span class="lang lang-ar" lang="ar">عرض في App Store</span><svg><use href="#i-external"></use></svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="slide" data-section-en="Delivery plan" data-section-ar="خطة التنفيذ" aria-label="Delivery plan">
+                <div class="slide-heading">
+                    <p class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span class="lang lang-en">06 · Delivery plan</span>
+                        <span class="lang lang-ar" lang="ar">06 · خطة التنفيذ</span>
+                    </p>
+                    <h2><span class="lang lang-en">A clear path from approval to launch.</span><span class="lang lang-ar" lang="ar">مسار واضح من الاعتماد إلى الإطلاق.</span></h2>
+                    <p><span class="lang lang-en">You see and review the product throughout the project—not only at the end.</span><span class="lang lang-ar" lang="ar">تتم مشاهدة المنتج ومراجعته خلال المشروع، وليس فقط عند نهايته.</span></p>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-step">
+                        <span class="timeline-number">01</span>
+                        <span class="timeline-line"></span>
+                        <div class="timeline-icon"><svg><use href="#i-users"></use></svg></div>
+                        <h3><span class="lang lang-en">Align</span><span class="lang lang-ar" lang="ar">تحديد الاحتياج</span></h3>
+                        <p><span class="lang lang-en">Confirm goals, content, member rules, and the final agreed scope.</span><span class="lang lang-ar" lang="ar">تأكيد الأهداف والمحتوى وقواعد العضوية والنطاق النهائي المتفق عليه.</span></p>
+                    </article>
+                    <article class="timeline-step">
+                        <span class="timeline-number">02</span>
+                        <span class="timeline-line"></span>
+                        <div class="timeline-icon"><svg><use href="#i-spark"></use></svg></div>
+                        <h3><span class="lang lang-en">Design</span><span class="lang lang-ar" lang="ar">التصميم</span></h3>
+                        <p><span class="lang lang-en">Shape the screens, language, identity, and easiest member journey.</span><span class="lang lang-ar" lang="ar">تصميم الشاشات واللغة والهوية وأسهل رحلة لاستخدام أفراد العائلة.</span></p>
+                    </article>
+                    <article class="timeline-step">
+                        <span class="timeline-number">03</span>
+                        <span class="timeline-line"></span>
+                        <div class="timeline-icon"><svg><use href="#i-code"></use></svg></div>
+                        <h3><span class="lang lang-en">Build &amp; review</span><span class="lang lang-ar" lang="ar">التطوير والمراجعة</span></h3>
+                        <p><span class="lang lang-en">Develop the application and admin panel with regular working reviews.</span><span class="lang lang-ar" lang="ar">تطوير التطبيق ولوحة الإدارة مع مراجعات دورية لنسخ عاملة.</span></p>
+                    </article>
+                    <article class="timeline-step">
+                        <span class="timeline-number">04</span>
+                        <div class="timeline-icon"><svg><use href="#i-rocket"></use></svg></div>
+                        <h3><span class="lang lang-en">Launch &amp; support</span><span class="lang lang-ar" lang="ar">الإطلاق والدعم</span></h3>
+                        <p><span class="lang lang-en">Test, submit to the selected stores, hand over, and begin support.</span><span class="lang lang-ar" lang="ar">الاختبار والرفع إلى المتاجر المختارة والتسليم ثم بدء الدعم.</span></p>
+                    </article>
+                </div>
+
+                <div class="delivery-band">
+                    <div>
+                        <span class="platform-chip">iOS</span>
+                        <strong><span class="lang lang-en">1–2 months</span><span class="lang lang-ar" lang="ar">من شهر إلى شهرين</span></strong>
+                        <small><span class="lang lang-en">Estimated delivery</span><span class="lang lang-ar" lang="ar">مدة التنفيذ المتوقعة</span></small>
+                    </div>
+                    <span class="delivery-divider"></span>
+                    <div>
+                        <span class="platform-chip">iOS + Android</span>
+                        <strong><span class="lang lang-en">2–3 months</span><span class="lang lang-ar" lang="ar">من شهرين إلى ثلاثة أشهر</span></strong>
+                        <small><span class="lang lang-en">Estimated delivery</span><span class="lang lang-ar" lang="ar">مدة التنفيذ المتوقعة</span></small>
+                    </div>
+                    <p><svg><use href="#i-clock"></use></svg><span class="lang lang-en">Timing begins after approval, first payment, and receipt of required content.</span><span class="lang lang-ar" lang="ar">تبدأ المدة بعد الاعتماد وسداد الدفعة الأولى واستلام المحتوى المطلوب.</span></p>
+                </div>
+            </section>
+
+            <section class="slide slide-pricing" data-section-en="Packages &amp; pricing" data-section-ar="الباقات والأسعار" aria-label="Pricing packages">
+                <div class="slide-heading compact-heading pricing-heading">
+                    <div>
+                        <p class="eyebrow">
+                            <span class="eyebrow-line"></span>
+                            <span class="lang lang-en">07 · Packages &amp; pricing</span>
+                            <span class="lang lang-ar" lang="ar">07 · الباقات والأسعار</span>
+                        </p>
+                        <h2><span class="lang lang-en">Choose the platforms. Keep the complete scope.</span><span class="lang lang-ar" lang="ar">اختر المنصات، واحتفظ بالنطاق الكامل.</span></h2>
+                    </div>
+                    <p><span class="lang lang-en">The only package difference is Android. Both include the same family application and one year of support.</span><span class="lang lang-ar" lang="ar">الفرق الوحيد هو إضافة أندرويد. وتشمل الباقتان التطبيق العائلي نفسه وسنة من الدعم.</span></p>
+                </div>
+
+                <div class="pricing-grid">
+                    <article class="price-card">
+                        <header>
+                            <div>
+                                <span class="price-label"><span class="lang lang-en">Package A</span><span class="lang lang-ar" lang="ar">الباقة أ</span></span>
+                                <h3>iOS</h3>
+                            </div>
+                            <div class="platform-icons"><span><svg><use href="#i-phone"></use></svg></span></div>
+                        </header>
+                        <div class="price"><small>SAR</small><strong>17,000</strong></div>
+                        <div class="price-facts">
+                            <span><svg><use href="#i-clock"></use></svg><strong><span class="lang lang-en">1–2 months</span><span class="lang lang-ar" lang="ar">1–2 شهر</span></strong><small><span class="lang lang-en">delivery</span><span class="lang lang-ar" lang="ar">تنفيذ</span></small></span>
+                            <span><svg><use href="#i-shield"></use></svg><strong><span class="lang lang-en">1 year</span><span class="lang lang-ar" lang="ar">سنة</span></strong><small><span class="lang lang-en">support</span><span class="lang lang-ar" lang="ar">دعم</span></small></span>
+                        </div>
+                        <ul class="included-list">
+                            <li><svg><use href="#i-check"></use></svg><span class="lang lang-en">iPhone &amp; iPad application</span><span class="lang lang-ar" lang="ar">تطبيق آيفون وآيباد</span></li>
+                            <li><svg><use href="#i-check"></use></svg><span class="lang lang-en">Arabic &amp; English interfaces</span><span class="lang lang-ar" lang="ar">واجهتان عربية وإنجليزية</span></li>
+                            <li><svg><use href="#i-check"></use></svg><span class="lang lang-en">Complete agreed family features</span><span class="lang lang-ar" lang="ar">كامل مزايا العائلة المتفق عليها</span></li>
+                            <li><svg><use href="#i-check"></use></svg><span class="lang lang-en">Management panel &amp; launch</span><span class="lang lang-ar" lang="ar">لوحة الإدارة والإطلاق</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="price-card price-card-featured">
+                        <span class="recommended"><svg><use href="#i-spark"></use></svg><span class="lang lang-en">Wider reach</span><span class="lang lang-ar" lang="ar">وصول أوسع</span></span>
+                        <header>
+                            <div>
+                                <span class="price-label"><span class="lang lang-en">Package B</span><span class="lang lang-ar" lang="ar">الباقة ب</span></span>
+                                <h3>iOS + Android</h3>
+                            </div>
+                            <div class="platform-icons"><span><svg><use href="#i-phone"></use></svg></span><span><svg><use href="#i-phone"></use></svg></span></div>
+                        </header>
+                        <div class="price price-primary"><small>SAR</small><strong>28,000</strong></div>
+                        <div class="price-facts">
+                            <span><svg><use href="#i-clock"></use></svg><strong><span class="lang lang-en">2–3 months</span><span class="lang lang-ar" lang="ar">2–3 أشهر</span></strong><small><span class="lang lang-en">delivery</span><span class="lang lang-ar" lang="ar">تنفيذ</span></small></span>
+                            <span><svg><use href="#i-shield"></use></svg><strong><span class="lang lang-en">1 year</span><span class="lang lang-ar" lang="ar">سنة</span></strong><small><span class="lang lang-en">support</span><span class="lang lang-ar" lang="ar">دعم</span></small></span>
+                        </div>
+                        <ul class="included-list">
+                            <li><svg><use href="#i-check"></use></svg><span class="lang lang-en">iPhone, iPad &amp; Android applications</span><span class="lang lang-ar" lang="ar">تطبيق آيفون وآيباد وأندرويد</span></li>
+                            <li><svg><use href="#i-check"></use></svg><span class="lang lang-en">Arabic &amp; English interfaces</span><span class="lang lang-ar" lang="ar">واجهتان عربية وإنجليزية</span></li>
+                            <li><svg><use href="#i-check"></use></svg><span class="lang lang-en">Complete agreed family features</span><span class="lang lang-ar" lang="ar">كامل مزايا العائلة المتفق عليها</span></li>
+                            <li><svg><use href="#i-check"></use></svg><span class="lang lang-en">Management panel &amp; launch</span><span class="lang lang-ar" lang="ar">لوحة الإدارة والإطلاق</span></li>
+                        </ul>
+                    </article>
+                </div>
+                <p class="pricing-note"><svg><use href="#i-check"></use></svg><span class="lang lang-en">Both packages include testing, selected store submission, and source-code handover after final payment.</span><span class="lang lang-ar" lang="ar">تشمل الباقتان الاختبار والرفع إلى المتاجر المختارة وتسليم الشفرة المصدرية بعد الدفعة الأخيرة.</span></p>
+            </section>
+
+            <section class="slide" data-section-en="Support &amp; running services" data-section-ar="الدعم والخدمات التشغيلية" aria-label="Support and ongoing services">
+                <div class="slide-heading compact-heading support-heading">
+                    <div>
+                        <p class="eyebrow">
+                            <span class="eyebrow-line"></span>
+                            <span class="lang lang-en">08 · Support &amp; running services</span>
+                            <span class="lang lang-ar" lang="ar">08 · الدعم والخدمات التشغيلية</span>
+                        </p>
+                        <h2><span class="lang lang-en">Select the support period that suits the family.</span><span class="lang lang-ar" lang="ar">اختر مدة الدعم المناسبة للعائلة.</span></h2>
+                    </div>
+                    <p><span class="lang lang-en">Each total below includes development and the selected support period.</span><span class="lang lang-ar" lang="ar">كل مبلغ أدناه يشمل التطوير ومدة الدعم المختارة.</span></p>
+                </div>
+
+                <div class="support-layout">
+                    <div class="support-table-wrap">
+                        <table class="support-table">
+                            <thead>
+                                <tr>
+                                    <th><span class="lang lang-en">Support period</span><span class="lang lang-ar" lang="ar">مدة الدعم</span></th>
+                                    <th>iOS</th>
+                                    <th>iOS + Android</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><span class="lang lang-en">1 year</span><span class="lang lang-ar" lang="ar">سنة واحدة</span></th>
+                                    <td><strong>17,000</strong><small>SAR</small></td>
+                                    <td class="table-accent"><strong>28,000</strong><small>SAR</small></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="lang lang-en">2 years</span><span class="lang lang-ar" lang="ar">سنتان</span></th>
+                                    <td><strong>20,000</strong><small>SAR</small></td>
+                                    <td class="table-accent"><strong>33,000</strong><small>SAR</small></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="lang lang-en">3 years</span><span class="lang lang-ar" lang="ar">ثلاث سنوات</span></th>
+                                    <td><strong>23,000</strong><small>SAR</small></td>
+                                    <td class="table-accent"><strong>38,000</strong><small>SAR</small></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="support-definition">
+                            <svg><use href="#i-shield"></use></svg>
+                            <p><strong><span class="lang lang-en">Support covers</span><span class="lang lang-ar" lang="ar">يشمل الدعم</span></strong><span class="lang lang-en">Technical help, fixes for the delivered application, routine security updates, and normal compatibility updates. New features are quoted separately.</span><span class="lang lang-ar" lang="ar">المساعدة الفنية وإصلاح مشكلات التطبيق المسلم والتحديثات الأمنية الدورية وتحديثات التوافق المعتادة. تُسعّر المزايا الجديدة بشكل مستقل.</span></p>
+                        </div>
+                    </div>
+
+                    <aside class="running-services">
+                        <span class="running-kicker"><span class="lang lang-en">Paid directly by the client</span><span class="lang lang-ar" lang="ar">يدفعها العميل مباشرة</span></span>
+                        <h3><span class="lang lang-en">Running services stay in the family’s ownership.</span><span class="lang lang-ar" lang="ar">تبقى الخدمات التشغيلية مملوكة للعائلة.</span></h3>
+                        <ul>
+                            <li><span class="service-icon"><svg><use href="#i-phone"></use></svg></span><span><strong>Apple &amp; Google</strong><small><span class="lang lang-en">Developer organization accounts</span><span class="lang lang-ar" lang="ar">حسابات المطور للجهة المالكة</span></small></span></li>
+                            <li><span class="service-icon"><svg><use href="#i-server"></use></svg></span><span><strong><span class="lang lang-en">Hosting &amp; storage</span><span class="lang lang-ar" lang="ar">الاستضافة والتخزين</span></strong><small><span class="lang lang-en">Live service and extra capacity as usage grows</span><span class="lang lang-ar" lang="ar">تشغيل الخدمة وزيادة السعة عند نمو الاستخدام</span></small></span></li>
+                            <li><span class="service-icon"><svg><use href="#i-mail"></use></svg></span><span><strong><span class="lang lang-en">Domain &amp; business email</span><span class="lang lang-ar" lang="ar">النطاق والبريد المهني</span></strong><small><span class="lang lang-en">Accounts and consumption fees</span><span class="lang lang-ar" lang="ar">الحسابات ورسوم الاستخدام</span></small></span></li>
+                            <li><span class="service-icon"><svg><use href="#i-message"></use></svg></span><span><strong><span class="lang lang-en">SMS &amp; email delivery</span><span class="lang lang-ar" lang="ar">إرسال الرسائل والبريد</span></strong><small><span class="lang lang-en">Usage-based provider charges</span><span class="lang lang-ar" lang="ar">رسوم مزود الخدمة حسب الاستهلاك</span></small></span></li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="slide slide-close" data-section-en="Next step" data-section-ar="الخطوة التالية" aria-label="Next steps and payment">
+                <div class="close-layout">
+                    <div class="close-copy">
+                        <p class="eyebrow">
+                            <span class="eyebrow-line"></span>
+                            <span class="lang lang-en">09 · Next step</span>
+                            <span class="lang lang-ar" lang="ar">09 · الخطوة التالية</span>
+                        </p>
+                        <h2><span class="lang lang-en">One decision starts Al Naser.</span><span class="lang lang-ar" lang="ar">قرار واحد يبدأ مشروع الناصر.</span></h2>
+                        <p class="lead"><span class="lang lang-en">Choose the platform package and support period, confirm the scope and content, then approve the Al Naser family app to begin.</span><span class="lang lang-ar" lang="ar">اختر باقة المنصات ومدة الدعم، ثم أكّد النطاق والمحتوى واعتمد تطبيق عائلة الناصر للبدء.</span></p>
+                        <div class="decision-steps">
+                            <article><span>01</span><strong><span class="lang lang-en">Choose platforms</span><span class="lang lang-ar" lang="ar">اختيار المنصات</span></strong><small>iOS <span class="lang lang-en">or</span><span class="lang lang-ar" lang="ar">أو</span> iOS + Android</small></article>
+                            <article><span>02</span><strong><span class="lang lang-en">Choose support</span><span class="lang lang-ar" lang="ar">اختيار الدعم</span></strong><small><span class="lang lang-en">1, 2, or 3 years</span><span class="lang lang-ar" lang="ar">سنة أو سنتان أو 3 سنوات</span></small></article>
+                            <article><span>03</span><strong><span class="lang lang-en">Confirm &amp; begin</span><span class="lang lang-ar" lang="ar">الاعتماد والبدء</span></strong><small><span class="lang lang-en">Scope, content, and first payment</span><span class="lang lang-ar" lang="ar">النطاق والمحتوى والدفعة الأولى</span></small></article>
+                        </div>
+                    </div>
+
+                    <div class="close-panel">
+                        <div class="payment-heading">
+                            <span><span class="lang lang-en">Payment schedule</span><span class="lang lang-ar" lang="ar">جدول الدفعات</span></span>
+                            <small><span class="lang lang-en">Linked to clear project milestones</span><span class="lang lang-ar" lang="ar">مرتبطة بمراحل واضحة للمشروع</span></small>
+                        </div>
+                        <div class="payment-bar" aria-label="Payment schedule: 35%, 25%, 25%, 15%">
+                            <span class="pay-35"></span><span class="pay-25a"></span><span class="pay-25b"></span><span class="pay-15"></span>
+                        </div>
+                        <div class="payment-steps">
+                            <article><strong>35%</strong><span class="lang lang-en">Project start</span><span class="lang lang-ar" lang="ar">بدء المشروع</span></article>
+                            <article><strong>25%</strong><span class="lang lang-en">Core foundation</span><span class="lang lang-ar" lang="ar">اكتمال الأساس</span></article>
+                            <article><strong>25%</strong><span class="lang lang-en">Test version</span><span class="lang lang-ar" lang="ar">النسخة التجريبية</span></article>
+                            <article><strong>15%</strong><span class="lang lang-en">Final delivery</span><span class="lang lang-ar" lang="ar">التسليم النهائي</span></article>
+                        </div>
+                        <div class="commercial-notes">
+                            <p><svg><use href="#i-check"></use></svg><span class="lang lang-en">Store review time is controlled by Apple and Google.</span><span class="lang lang-ar" lang="ar">تتحكم Apple وGoogle في مدة مراجعة المتاجر.</span></p>
+                            <p><svg><use href="#i-check"></use></svg><span class="lang lang-en">Requests outside the agreed scope are priced before implementation.</span><span class="lang lang-ar" lang="ar">تُسعّر الطلبات خارج النطاق المتفق عليه قبل تنفيذها.</span></p>
+                            <p><svg><use href="#i-check"></use></svg><span class="lang lang-en">VAT is added only if legally applicable.</span><span class="lang lang-ar" lang="ar">تُضاف ضريبة القيمة المضافة إذا كانت مطبقة نظاماً.</span></p>
+                        </div>
+                        <div class="signature">
+                            <span class="signature-mark">AA</span>
+                            <span><small><span class="lang lang-en">Prepared by</span><span class="lang lang-ar" lang="ar">إعداد</span></small><strong class="lang lang-en">Abdullah Alamzyad</strong><strong class="lang lang-ar" lang="ar">عبدالله المزيد</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="deck-nav">
+            <div class="slide-counter" aria-live="polite"><span id="currentSlide">01</span><span class="counter-rule"></span><span id="totalSlides">10</span></div>
+            <div class="progress-track" id="progressTrack" aria-label="Presentation progress"><span id="progressFill"></span></div>
+            <div class="keyboard-hint hide-small">
+                <span class="key">←</span><span class="key">→</span>
+                <span class="lang lang-en">Navigate</span>
+                <span class="lang lang-ar" lang="ar">للتنقل</span>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-button" type="button" id="previousButton" aria-label="Previous slide"><svg><use href="#i-arrow-left"></use></svg></button>
+                <button class="nav-button nav-button-primary" type="button" id="nextButton" aria-label="Next slide"><svg><use href="#i-arrow-right"></use></svg></button>
+            </div>
+        </footer>
+    </div>
+
+    <dialog class="contents-dialog" id="contentsDialog">
+        <div class="dialog-head">
+            <div>
+                <small><span class="lang lang-en">Presentation</span><span class="lang lang-ar" lang="ar">العرض</span></small>
+                <h2><span class="lang lang-en">Slide contents</span><span class="lang lang-ar" lang="ar">محتويات العرض</span></h2>
+            </div>
+            <button class="icon-button" type="button" id="closeContentsButton" aria-label="Close contents"><svg><use href="#i-close"></use></svg></button>
+        </div>
+        <div class="contents-list">
+            <button type="button" data-slide="0"><span>01</span><strong><span class="lang lang-en">A private digital home</span><span class="lang lang-ar" lang="ar">بيت رقمي خاص</span></strong></button>
+            <button type="button" data-slide="1"><span>02</span><strong><span class="lang lang-en">The opportunity</span><span class="lang lang-ar" lang="ar">الفرصة</span></strong></button>
+            <button type="button" data-slide="2"><span>03</span><strong><span class="lang lang-en">Member experience</span><span class="lang lang-ar" lang="ar">تجربة أفراد العائلة</span></strong></button>
+            <button type="button" data-slide="3"><span>04</span><strong><span class="lang lang-en">Family administration</span><span class="lang lang-ar" lang="ar">إدارة العائلة</span></strong></button>
+            <button type="button" data-slide="4"><span>05</span><strong><span class="lang lang-en">Selected family product</span><span class="lang lang-ar" lang="ar">نموذج عائلي مختار</span></strong></button>
+            <button type="button" data-slide="5"><span>06</span><strong><span class="lang lang-en">Published apps</span><span class="lang lang-ar" lang="ar">التطبيقات المنشورة</span></strong></button>
+            <button type="button" data-slide="6"><span>07</span><strong><span class="lang lang-en">Delivery plan</span><span class="lang lang-ar" lang="ar">خطة التنفيذ</span></strong></button>
+            <button type="button" data-slide="7"><span>08</span><strong><span class="lang lang-en">Packages &amp; pricing</span><span class="lang lang-ar" lang="ar">الباقات والأسعار</span></strong></button>
+            <button type="button" data-slide="8"><span>09</span><strong><span class="lang lang-en">Support &amp; running services</span><span class="lang lang-ar" lang="ar">الدعم والخدمات التشغيلية</span></strong></button>
+            <button type="button" data-slide="9"><span>10</span><strong><span class="lang lang-en">Next step</span><span class="lang lang-ar" lang="ar">الخطوة التالية</span></strong></button>
+        </div>
+    </dialog>
+
+    <noscript>
+        <div class="noscript-message">JavaScript is required to navigate this presentation.</div>
+    </noscript>
+    <script src="app.js"></script>
+</body>
+</html>
