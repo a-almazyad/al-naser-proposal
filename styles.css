@@ -3089,11 +3089,6 @@ body[data-lang="ar"] .contents-list button {
         top: 12px;
     }
 
-    body[data-lang="ar"] .timeline-step {
-        padding-inline-start: 0;
-        padding-inline-end: 58px;
-    }
-
     body[data-lang="ar"] .timeline-icon {
         left: auto;
         right: 0;
