@@ -3703,6 +3703,10 @@ body[data-lang="ar"] .about-intro h2 {
         width: min(86vw, 310px);
     }
 
+    .proof-device-glow {
+        width: 112%;
+    }
+
     .slide-divider h2 {
         font-size: 43px;
     }
