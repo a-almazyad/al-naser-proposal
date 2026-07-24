@@ -20,9 +20,10 @@
     const closeContentsButton = document.getElementById("closeContentsButton");
     const contentsItems = Array.from(document.querySelectorAll("[data-slide]"));
     const screenshot = document.getElementById("familyAppScreenshot");
+    const languageStorageKey = "al-naser-proposal-language-v2";
 
     let currentIndex = 0;
-    let language = "en";
+    let language = "ar";
     let wheelLocked = false;
     let pointerStartX = 0;
     let pointerStartY = 0;
@@ -36,8 +37,8 @@
     };
 
     const readInitialLanguage = () => {
-        const stored = window.localStorage.getItem("family-proposal-language");
-        return stored === "ar" ? "ar" : "en";
+        const stored = window.localStorage.getItem(languageStorageKey);
+        return stored === "en" ? "en" : "ar";
     };
 
     const updateScreenshotState = () => {
@@ -56,13 +57,21 @@
             "aria-label",
             language === "en" ? "Switch to Arabic" : "التبديل إلى الإنجليزية"
         );
+        previousButton.setAttribute(
+            "aria-label",
+            language === "ar" ? "الشريحة السابقة" : "Previous slide"
+        );
+        nextButton.setAttribute(
+            "aria-label",
+            language === "ar" ? "الشريحة التالية" : "Next slide"
+        );
         document.title =
             language === "en"
                 ? "Al Naser Family App Proposal — Abdullah Alamzyad"
                 : "مقترح تطبيق الناصر — عبدالله المزيد";
 
         if (persist) {
-            window.localStorage.setItem("family-proposal-language", language);
+            window.localStorage.setItem(languageStorageKey, language);
         }
         render();
     };
@@ -184,10 +193,18 @@
         if (contentsDialog.open && event.key !== "Escape") return;
         if (["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement?.tagName)) return;
 
-        if (["ArrowRight", "ArrowDown", "PageDown", " "].includes(event.key)) {
+        if (event.key === "ArrowRight") {
+            event.preventDefault();
+            if (language === "ar") goPrevious();
+            else goNext();
+        } else if (event.key === "ArrowLeft") {
+            event.preventDefault();
+            if (language === "ar") goNext();
+            else goPrevious();
+        } else if (["ArrowDown", "PageDown", " "].includes(event.key)) {
             event.preventDefault();
             goNext();
-        } else if (["ArrowLeft", "ArrowUp", "PageUp"].includes(event.key)) {
+        } else if (["ArrowUp", "PageUp"].includes(event.key)) {
             event.preventDefault();
             goPrevious();
         } else if (event.key === "Home") {
@@ -240,7 +257,8 @@
             const deltaY = touch.clientY - pointerStartY;
 
             if (Math.abs(deltaX) > 55 && Math.abs(deltaX) > Math.abs(deltaY) * 1.25) {
-                if (deltaX < 0) goNext();
+                const isNextSwipe = language === "ar" ? deltaX > 0 : deltaX < 0;
+                if (isNextSwipe) goNext();
                 else goPrevious();
             }
         },
